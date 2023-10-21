@@ -28,6 +28,9 @@
                 </ul>
             </nav>
             <div class="home-panel">
+                <button id="arrow-right" onclick="go_right()" class="arrow-right">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
                 <div id="intro-top" class="intro-top">
                     <p><span>J</span>omary <span>C</span>oquilla.</p>
                     <img id="img1" class="img1" src="img/img1.svg">
@@ -42,11 +45,9 @@
                     <p>Web development allows me to create user-friendly websites that seamlessly blend design and functionality. Software development is where I'm honing my skills to engineer efficient solutions, while game development lets me explore the art of crafting captivating stories and interactive worlds. Join me as I navigate the boundless possibilities of the digital realm, where innovation and imagination converge to bring ideas to life.</p>
                 </div>
                 <div id="education-top" class="education-top">
-                    <p><span>C</span>ebu <span>T</span>echnological <span>U</span>niversity <span>M</span>ain <span>C</span>ampus.</p>
-                    <img id="img1" class="img1" src="img/ctu.svg">
-                    <button class="arrow-right">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
+                    <p class="school"><span>C</span>ebu <span>T</span>echnological <span>U</span>niversity <span>M</span>ain <span>C</span>ampus.</p>
+                    <img id="school-img" class="img1" src="img/ctu.svg">
+                    <p id="about">I'm currently a student at Cebu Technological University Main Campus, pursuing a Bachelor of Science in Information Technology (BSIT). I have always had a passion for technology and a deep curiosity about the digital world. My journey in the field of IT has been an exciting and fulfilling one, and I'm eager to continue expanding my knowledge and skills in this ever-evolving field. I believe that education is the key to unlocking new opportunities and making a positive impact in the world, and I am dedicated to achieving my academic and career goals in the realm of Information Technology.</p>
                 </div>
                 <div id="education-middle" class="education-middle">
                     <div class="line1"></div>
@@ -54,7 +55,15 @@
                     <div class="line2"></div>
                 </div>
                 <div id="education-bottom" class="education-bottom">
-                    
+                    <div id="div1"></div>
+                    <p id="p1" onmouseover="changeDivColor([1, 2, 3, 4])" onmouseout="resetDivColor([1, 2, 3, 4])" onclick="selected_educ([1, 2, 3, 4])">College</p>
+                    <div id="div2"></div>
+                    <p id="p2" onmouseover="changeDivColor([2, 1, 3, 4])" onmouseout="resetDivColor([2, 1, 3, 4])" onclick="selected_educ([2, 1, 3, 4])">Senior High</p>
+                    <div id="div3"></div>
+                    <p id="p3" onmouseover="changeDivColor([3, 4, 1, 2])" onmouseout="resetDivColor([3, 4, 1, 2])" onclick="selected_educ([3, 4, 1, 2])">Junior High</p>
+                    <div id="div4"></div>
+                    <p id="p4" onmouseover="changeDivColor([4, 1, 2, 3])" onmouseout="resetDivColor([4, 1, 2, 3])" onclick="selected_educ([4, 1, 2, 3])">Elementary</p>
+
                 </div>
             </div>
         </div>  
