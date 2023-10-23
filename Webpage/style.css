@@ -128,7 +128,7 @@ body {
     background-color: transparent;
     z-index: 1;
     opacity: 0;
-    transition: 1.5s ease;
+    transition: 1s ease;
 }
 
 .arrow-right i {
@@ -248,7 +248,7 @@ body {
     position: absolute;
     display: flex;
     flex-direction: row;
-    top: 110%;
+    top: 80vw;
     margin-top: 1.5vw;
     transition: 1.2s ease;
 }
@@ -303,7 +303,7 @@ body {
     position: absolute;
     display: flex;
     flex-direction: row;
-    top: 100vh;
+    top: 90vw;
     padding:0;
     overflow: hidden;
     align-items: center;
@@ -341,12 +341,12 @@ body {
 .home-panel .education-bottom {
     position: absolute;
     display: flex;
-    top: 110%;
+    top: 100vw;
     align-items: center;
+    transition: 1.3s ease;
 }
 
 .education-bottom p {
-    top: 110%;
     margin-left: 0;
     color: white;
     font-size: 1vw;
@@ -377,6 +377,145 @@ body {
 }
 
 .education-bottom :nth-child(1) {
+    right: 1.5%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fedd64;
+    border: 1px solid white;
+    animation: right-pop 0.5s;
+    margin-left: 0;
+}
+
+.home-panel .movie-top {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 80vw;
+    margin-top: 1.5vw;
+    transition: 1.2s ease;
+}
+
+.movie-top span {
+    color: #fedd64;
+}
+
+.movie-top .movie-title{
+    padding: 0vw 11vw 0vw 0vw;
+    margin-top: 0.5vw;
+    margin-left: 0;
+    color: white;
+    opacity: 0.9;
+    font-size: 4vw;
+    width: 18vw;
+    letter-spacing: 6px;
+    font-weight: 600;
+    transition: 0.5s ease-in-out;
+    animation: left-pop 1s;
+    transition: 0.5s ease;
+}
+
+.movie-top iframe {
+    width: 40vw;
+    border-radius: 20px;
+}
+
+.movie-top .movie-about {
+    padding: 0vw 0vw 0vw 0vw;
+    margin-top: 3vw;
+    margin-left: 8vw;
+    color: white;
+    opacity: 0.9;
+    font-size: 0.8vw;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-weight: 200;
+    width: 23vw;
+    transition: 0.5s ease-in-out;
+    animation: left-pop 1s;
+    transition: 0.5s ease;
+} 
+
+.home-panel .movie-middle {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    top: 90vw;
+    padding:0;
+    overflow: hidden;
+    align-items: center;
+    transition: 1.3s ease;
+}
+
+.movie-middle .line1 {
+    width: 10vw;
+    height: 1px;
+    background-color: white;
+    opacity: 0.3;
+    transition: 0.5s ease;
+    animation: left-pop 1s;
+    overflow: hidden;
+}
+
+.movie-middle p {
+    font-size: 1.5vw;
+    opacity: 0.8;
+    transition: 0.5s ease;
+    animation: left-pop 1s;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.movie-middle .line2 {
+    width: 60vw;
+    height: 1px;
+    background-color: white;
+    opacity: 0.3;
+    transition: 0.5s ease;
+    animation: right-pop 0.8s;
+}
+
+
+.home-panel .movie-bottom {
+    position: absolute;
+    display: flex;
+    top: 100vw;
+    align-items: center;
+    transition: 1.3s ease;
+}
+
+.movie-bottom p {
+    top: 110%;
+    margin-left: 0;
+    color: white;
+    font-size: 1vw;
+    opacity: 0.6;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.movie-bottom :nth-child(2) {
+    color: #fedd64;
+}
+
+.movie-bottom p:hover {
+    color: #fedd64;
+}
+
+
+.movie-bottom div {
+    right: 1.5%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid white;
+    animation: right-pop 0.5s;
+    margin-left: 10vw;
+    transition: 0.5s ease;
+}
+
+.movie-bottom :nth-child(1) {
     right: 1.5%;
     width: 15px;
     height: 15px;
