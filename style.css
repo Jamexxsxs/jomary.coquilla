@@ -27,6 +27,7 @@ body {
     flex-direction: column;
     background-color: #262735;
     overflow: hidden;
+    transition: 0.5s ease-in;
 }
 
 .home {
@@ -49,7 +50,7 @@ body {
 
 .home p {
     padding: 0.5vw;
-    color: #fedd64;
+    color: #f8f8f8;
     margin: 0.8vw;
     opacity: 0.9;
 }
@@ -57,6 +58,7 @@ body {
 .home header p{
     transition: 0.5s ease;
     animation: left-pop 1s;
+    color: #fedd64;
 }
 
 .home .line {
@@ -69,17 +71,35 @@ body {
     transition: 0.5s ease;
 }
 
-.home .circle {
+.home .mode {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
     position: absolute;
     margin-left: 1.5vw;
-    top: 50%;
+    top: 40%;
     right: 1.5%;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
+    width: 3vw;
+    height: 1.5vw;
+    border-radius: 20px;
     background-color: transparent;
     border: 1px solid white;
     animation: right-pop 0.5s;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.mode:hover {
+    border-color: #25afee;
+}
+
+.mode div{
+    height: 1.2vw;
+    width: 1.2vw;
+    background-color: #25afee;
+    border-radius: 50%;
+    margin-right: 1.5px;
+    margin-left: 0;
     transition: 0.5s ease;
 }
 
@@ -98,7 +118,6 @@ body {
 .content ul {
     font-family: 'Nunito', sans-serif;
     list-style: none;
-    color: white;
     opacity: 0.9;
     padding: 0;
     transition: 1s ease-in-out;
@@ -109,6 +128,7 @@ body {
     letter-spacing: 1.5px;
     opacity: 0.4;
     transition: 0.5s ease-in-out;
+    color: #f8f8f8;
 }
 
 .content .intro {
@@ -161,8 +181,7 @@ body {
 
 .intro-top p{
     padding: 2.5vw 20vw 0vw 0vw;
-    margin-left: 0;
-    color: white;
+    margin-left: 0.5vw;
     opacity: 0.9;
     font-size: 6vw;
     width: 22vw;
@@ -196,7 +215,7 @@ body {
     transition: 1.3s ease;
 }
 
-.intro-middle .line1 {
+.intro-middle div:nth-child(1) {
     width: 10vw;
     height: 1px;
     background-color: white;
@@ -212,9 +231,10 @@ body {
     transition: 0.5s ease;
     animation: left-pop 1s;
     margin: 0;
+    color: #fedd64;
 }
 
-.intro-middle .line2 {
+.intro-middle div:nth-child(3) {
     width: 60vw;
     height: 1px;
     background-color: white;
@@ -232,7 +252,6 @@ body {
 }
 
 .intro-bottom :nth-child(1){
-    color: white;
     font-size: 1vw;
     opacity: 0.6;
     transition: 0.5s ease-in-out;
@@ -242,7 +261,6 @@ body {
 }
 
 .intro-bottom :nth-child(2){
-    color: white;
     font-size: 1vw;
     opacity: 0.6;
     transition: 0.5s ease-in-out;
@@ -266,7 +284,6 @@ body {
     padding: 1.5vw 18vw 0vw 0vw;
     margin-top: 1vw;
     margin-left: 0;
-    color: white;
     opacity: 0.9;
     font-size: 3vw;
     width: 25vw;
@@ -292,7 +309,6 @@ body {
     padding: 0vw 0vw 0vw 0vw;
     margin-top: 3vw;
     margin-left: 10vw;
-    color: white;
     opacity: 0.9;
     font-size: 1vw;
     letter-spacing: 1px;
@@ -315,7 +331,7 @@ body {
     transition: 1.3s ease;
 }
 
-.education-middle .line1 {
+.education-middle div:nth-child(1) {
     background-color: white;
     width: 10vw;
     height: 1px;
@@ -332,9 +348,10 @@ body {
     animation: left-pop 1s;
     white-space: nowrap;
     margin: 0;
+    color:#fedd64;
 }
 
-.education-middle .line2 {
+.education-middle div:nth-child(3) {
     background-color: white;
     width: 80vw;
     height: 1px;
@@ -353,7 +370,6 @@ body {
 
 .education-bottom p {
     margin-left: 0;
-    color: white;
     font-size: 1vw;
     opacity: 0.6;
     cursor: pointer;
@@ -409,7 +425,6 @@ body {
     padding: 0vw 11vw 0vw 0vw;
     margin-top: 0.5vw;
     margin-left: 0;
-    color: white;
     opacity: 0.9;
     font-size: 4vw;
     width: 18vw;
@@ -423,13 +438,13 @@ body {
 .movie-top iframe {
     width: 40vw;
     border-radius: 20px;
+    border: 1px solid #fedd64;
 }
 
 .movie-top .movie-about {
     padding: 0vw 0vw 0vw 0vw;
     margin-top: 3vw;
     margin-left: 8vw;
-    color: white;
     opacity: 0.9;
     font-size: 0.8vw;
     letter-spacing: 1px;
@@ -452,7 +467,7 @@ body {
     transition: 1.3s ease;
 }
 
-.movie-middle .line1 {
+.movie-middle div:nth-child(1) {
     width: 10vw;
     height: 1px;
     background-color: white;
@@ -469,9 +484,10 @@ body {
     animation: left-pop 1s;
     margin: 0;
     white-space: nowrap;
+    color:#fedd64;
 }
 
-.movie-middle .line2 {
+.movie-middle div:nth-child(3) {
     width: 60vw;
     height: 1px;
     background-color: white;
@@ -492,7 +508,6 @@ body {
 .movie-bottom p {
     top: 110%;
     margin-left: 0;
-    color: white;
     font-size: 1vw;
     opacity: 0.6;
     cursor: pointer;
@@ -548,7 +563,6 @@ body {
     padding: 1.5vw 10vw 0vw 0vw;
     margin-top: 5vw;
     margin-left: 0;
-    color: white;
     opacity: 0.9;
     font-size: 3vw;
     width: 25vw;
@@ -619,7 +633,6 @@ body {
     padding: 0vw 0vw 0vw 0vw;
     margin-top: 3vw;
     margin-left: 7vw;
-    color: white;
     opacity: 0.9;
     font-size: 0.8vw;
     letter-spacing: 0.5px;
@@ -641,7 +654,7 @@ body {
     transition: 1.3s ease;
 }
 
-.song-middle .line1 {
+.song-middle div:nth-child(1) {
     background-color: white;
     width: 10vw;
     height: 1px;
@@ -658,9 +671,10 @@ body {
     animation: left-pop 1s;
     white-space: nowrap;
     margin: 0;
+    color:#fedd64;
 }
 
-.song-middle .line2 {
+.song-middle div:nth-child(3) {
     background-color: white;
     width: 80vw;
     height: 1px;
@@ -679,7 +693,6 @@ body {
 
 .song-bottom p {
     margin-left: 0;
-    color: white;
     font-size: 1vw;
     opacity: 0.6;
     cursor: pointer;
